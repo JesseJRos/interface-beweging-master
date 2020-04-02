@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Orbitron";
+  src: url("./Orbitron/static/Orbitron-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Orbitron-small";
+  src: url("./Orbitron/static/Orbitron-Regular.ttf") format("truetype");
+}
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#animateGif {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /*z-index: 2;*/
+}
+
+#animation video {
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  /*z-index: 1;*/
+}
+
+#buttons {
+  /* position: absolute; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /*flex-direction: column;*/
+  bottom: 3em;
+  margin-top: 37em;
+  /* left: 35em; */
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#buttons a {
+  border-radius: 50px;
+  padding: 0.3em 0.3em 0.1em 0.3em;
+  margin: 0.5em 0 0.5em 1em;
+  color: white;
+  font-family: Arial;
+}
+
+#buttons a img {
+  max-width: 6em;
+  max-height: 6em;
+  border-radius: 60px;
+}
+
+.testpreview {
+  z-index: 10;
+  position: absolute;
+}
+
+.testpreview:hover {
+  opacity: 0;
+  /*display: none;*/
+  transition: all .2s ease-in-out;
+}
+
+#buttons a:hover {
+  transition: all .2s ease-in-out;
+  box-shadow: 4px 4px 16px -5px rgba(0,0,0,0.75);
+  transform: scale(1.1);
+  background-color: deepskyblue;
+}
+
+.active {
+  transition: all .2s ease-in-out;
+  box-shadow: 4px 4px 16px -5px rgba(0,0,0,0.75);
+  transform: scale(1.1);
+  background-color: deepskyblue;
+}
+
+.bg {
+  transition: all .5s ease-in-out;
+  /*background-color: #ffa875;*/
+  background-color: #fff;
+}
+
+.color1 {
+  transition: all .5s ease-in-out;
+  /*background-color: #ffa875;*/
+  background-color: #000;
+}
+
+.color2 {
+  transition: all .5s ease-in-out;
+  background-color: #000;
+}
+
+.color3 {
+  transition: all .5s ease-in-out;
+  background-color: #000;
+}
+
+.hidden {
+  /*display: none;*/
+  opacity: 0;
+}
+
+.visible {
+  /*display: flex;*/
+  opacity: 100;
+}
+
+.transition {
+  opacity: 100;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.fade-in {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.box{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 998
+}
+.content {
+  width: 12em;
+  height: 2rem;
+  text-align: center;
+  z-index: 999;
+  color: #A9A5D6;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-family: 'Caveat Brush', cursive;
+  font-size: 5rem;
+  cursor:pointer;
+}
+
+
+p{
+  font-family: 'Caveat Brush', cursive;
+  color: #2CA899;
+  font-size: 1.1rem;
+}
+
+.credits{
+  color: #2CA899;
+  font-size: 0.8rem;
+}
+
+.start{
+  -webkit-animation: flickerAnimation 2s infinite;
+   animation: flickerAnimation 2s infinite;
+}
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0.5; }
+  100% { opacity:1; }
+}
+
+a{
+  text-decoration: none;
+  color: #2CA899;}
