@@ -82,7 +82,7 @@
 }
 
 .bg {
-  background-image: url(/img/place.png);
+  background-image: url("../img/place.png");
   background-size: cover;
 }
 
