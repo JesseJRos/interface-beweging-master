@@ -20,8 +20,8 @@ document.getElementById("button1").onclick = function button1() {
   document.getElementById("transition").play();
   document.getElementById("video").pause();
   document.getElementById("transition").style.opacity = "100";
-  document.getElementById("transition").classList.add("fade-in");
-  document.getElementById("transition").classList.remove("fade-out");
+  // document.getElementById("transition").classList.add("fade-in");
+  // document.getElementById("transition").classList.remove("fade-out");
   document.getElementById("video").classList.remove("hidden");
   document.getElementById("animateGif").style.display = "none";
   document.getElementById("button1").classList.add("active");
@@ -46,6 +46,11 @@ function setFade1() {
   document.getElementById("transition").classList.add("fade-out");
   document.getElementById("transition").style.opacity = "0";
 }
+
+
+
+
+
 
 document.getElementById("button2").onclick = function button2() {
   document.getElementById("animateGif").pause();
