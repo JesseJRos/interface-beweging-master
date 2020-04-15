@@ -1,10 +1,6 @@
 @font-face {
-  font-family: "Orbitron";
-  src: url("./Orbitron/static/Orbitron-Black.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Orbitron-small";
-  src: url("./Orbitron/static/Orbitron-Regular.ttf") format("truetype");
+  font-family: "Caveat-Brush";
+  src: url("./Caveat_Brush/CaveatBrush-Regular.ttf") format("truetype");
 }
 
 #container {
@@ -145,7 +141,7 @@
   height: 2rem;
   text-align: center;
   z-index: 999;
-  color: #A9A5D6;
+  color: #9E9BCE;
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -158,17 +154,18 @@
 p{
   font-family: 'Caveat Brush', cursive;
   color: #2CA899;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
+  margin-top: -0.5em;
 }
 
 .credits{
   color: #2CA899;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .start{
-  -webkit-animation: flickerAnimation 2s infinite;
-   animation: flickerAnimation 2s infinite;
+  -webkit-animation: flickerAnimation 1s infinite;
+   animation: flickerAnimation 1s infinite;
 }
 
 @keyframes flickerAnimation {
